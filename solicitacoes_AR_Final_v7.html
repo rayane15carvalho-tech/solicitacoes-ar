@@ -20,7 +20,7 @@
     --danger:#C53030;
   }
   body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
- 
+
   /* HEADER */
   .header{background:var(--navy);padding:18px 36px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 16px rgba(27,42,74,0.2);position:sticky;top:0;z-index:100}
   .header-logo{display:grid;grid-template-columns:1fr 1fr;gap:3px;width:28px;height:28px;flex-shrink:0}
@@ -30,20 +30,20 @@
   .header-logo span:nth-child(4){opacity:.3}
   .header-title{color:#fff;font-size:18px;font-weight:700;letter-spacing:-0.3px}
   .header-sub{color:#8BA5C8;font-size:12px;margin-top:1px}
- 
+
   /* PROGRESS */
   .progress-wrap{background:rgba(255,255,255,0.1);height:3px;position:absolute;bottom:0;left:0;right:0}
   .progress-fill{height:3px;background:#4299E1;transition:width 0.4s ease}
- 
+
   /* BODY */
   .body{max-width:780px;margin:0 auto;padding:28px 16px 48px}
- 
+
   /* STEP INDICATOR */
   .steps{display:flex;gap:0;margin-bottom:24px;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
   .step{flex:1;padding:10px 8px;text-align:center;font-size:12px;font-weight:500;background:#fff;color:var(--muted);border-bottom:3px solid transparent;cursor:default;transition:all 0.2s}
   .step.active{color:var(--navy);border-bottom-color:var(--navy);font-weight:700}
   .step.done{color:var(--blue);border-bottom-color:var(--blue)}
- 
+
   /* CARDS */
   .card{background:#fff;border-radius:14px;box-shadow:0 1px 4px rgba(27,42,74,0.07);border:1px solid var(--border);margin-bottom:18px;overflow:hidden;animation:fadeUp 0.3s ease}
   @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -58,7 +58,7 @@
   .card-header-badge{background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:600;padding:2px 9px;border-radius:99px;margin-left:auto;white-space:nowrap}
   .card-header-badge.new{background:#48BB78;color:#fff}
   .card-body{padding:22px}
- 
+
   /* FIELDS */
   .field{margin-bottom:16px}
   .field:last-child{margin-bottom:0}
@@ -77,17 +77,17 @@
   }
   select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23718096' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;cursor:pointer}
   textarea{resize:vertical;min-height:72px}
- 
+
   /* FILE INPUT */
   .file-label{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1.5px dashed #CBD5E0;border-radius:8px;font-size:13px;color:var(--muted);cursor:pointer;background:#FAFBFC;transition:all 0.15s}
   .file-label:hover{border-color:var(--blue);color:var(--blue);background:#EBF4FF}
   .file-label input{display:none}
   .file-name{font-size:12px;color:var(--text);font-weight:500}
- 
+
   /* INFO BOXES */
   .info-box{background:#EBF4FF;border:1px solid #BEE3F8;border-left:3px solid var(--blue);border-radius:8px;padding:10px 14px;font-size:12px;color:#2B6CB0;margin-bottom:14px;line-height:1.5}
   .warning-box{background:#FFFBEB;border:1px solid #F6E05E;border-left:3px solid #D69E2E;border-radius:8px;padding:10px 14px;font-size:12px;color:var(--warning);margin-bottom:14px;line-height:1.5}
- 
+
   /* SUBMIT */
   .submit-row{display:flex;justify-content:center;margin-top:24px}
   .submit-btn{background:var(--navy);color:#fff;border:none;border-radius:10px;padding:13px 44px;font-size:15px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;letter-spacing:0.2px;box-shadow:0 2px 8px rgba(27,42,74,0.2);transition:background 0.15s,transform 0.1s,box-shadow 0.15s}
@@ -95,7 +95,7 @@
   .submit-btn:active{transform:translateY(0)}
   .submit-btn:disabled{background:#718096;cursor:not-allowed;transform:none}
   .submit-hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
- 
+
   /* SUCCESS */
   .success{background:#F0FFF4;border:1px solid #9AE6B4;border-radius:14px;padding:40px 24px;text-align:center;animation:fadeUp 0.4s ease}
   .success-icon{font-size:48px;margin-bottom:12px}
@@ -104,13 +104,13 @@
   .success-number{display:inline-block;background:#276749;color:#fff;font-size:13px;font-weight:600;padding:6px 16px;border-radius:99px;margin-bottom:20px}
   .new-btn{background:#fff;color:var(--navy);border:2px solid var(--navy);border-radius:10px;padding:10px 28px;font-size:14px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s}
   .new-btn:hover{background:var(--navy);color:#fff}
- 
+
   /* EMPTY STATE */
   .empty-state{text-align:center;padding:20px;color:var(--muted);font-size:13px}
- 
+
   /* HIDDEN */
   .hidden{display:none}
- 
+
   @media(max-width:600px){
     .two-col{grid-template-columns:1fr}
     .header{padding:14px 16px}
@@ -120,7 +120,7 @@
 </style>
 </head>
 <body>
- 
+
 <div class="header" style="position:relative">
   <img src="data:image/png;base64,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" style="height:44px;width:44px;object-fit:contain;border-radius:6px;flex-shrink:0">
   <div>
@@ -129,9 +129,9 @@
   </div>
   <div class="progress-wrap"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
 </div>
- 
+
 <div class="body">
- 
+
   <!-- STEPS -->
   <div class="steps">
     <div class="step active" id="step1">1. Identificação</div>
@@ -139,10 +139,10 @@
     <div class="step" id="step3">3. Detalhes</div>
     <div class="step" id="step4">4. Envio</div>
   </div>
- 
+
   <!-- FORMULÁRIO -->
   <div id="formArea">
- 
+
     <!-- SEÇÃO 1: Solicitante -->
     <div class="card">
       <div class="card-header navy">
@@ -181,7 +181,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- SEÇÃO 2: Detalhes -->
     <div class="card">
       <div class="card-header navy">
@@ -216,7 +216,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- CANCELAMENTO -->
     <div class="card hidden" id="sec-cancelamento">
       <div class="card-header red">
@@ -232,12 +232,12 @@
           <label class="file-label">
             <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 1v9M5 4l3-3 3 3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span id="file-cancelamento">Clique para anexar o documento</span>
-            <input type="file" onchange="setFileName(this,'file-cancelamento')">
+            <input type="file" multiple onchange="setFileName(this,'file-cancelamento')">
           </label>
         </div>
       </div>
     </div>
- 
+
     <!-- SUBSTITUIÇÃO -->
     <div class="card hidden" id="sec-substituicao">
       <div class="card-header orange">
@@ -259,12 +259,12 @@
           <label class="file-label">
             <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 1v9M5 4l3-3 3 3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span id="file-substituicao">Clique para anexar a NF</span>
-            <input type="file" onchange="setFileName(this,'file-substituicao')">
+            <input type="file" multiple onchange="setFileName(this,'file-substituicao')">
           </label>
         </div>
       </div>
     </div>
- 
+
     <!-- CARTA -->
     <div class="card hidden" id="sec-carta">
       <div class="card-header green">
@@ -283,7 +283,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- TRANSFERÊNCIA -->
     <div class="card hidden" id="sec-transferencia">
       <div class="card-header purple">
@@ -310,7 +310,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- NF FORA DO SISTEMA -->
     <div class="card hidden" id="sec-nf_fora">
       <div class="card-header green">
@@ -366,12 +366,12 @@
           <label class="file-label">
             <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 1v9M5 4l3-3 3 3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span id="file-nf">Clique para anexar o contrato assinado</span>
-            <input type="file" onchange="setFileName(this,'file-nf')">
+            <input type="file" multiple onchange="setFileName(this,'file-nf')">
           </label>
         </div>
       </div>
     </div>
- 
+
     <!-- BOLETO -->
     <div class="card hidden" id="sec-boleto">
       <div class="card-header teal">
@@ -446,17 +446,17 @@
           <label class="file-label">
             <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M8 1v9M5 4l3-3 3 3M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span id="file-boleto">Clique para anexar a NF</span>
-            <input type="file" onchange="setFileName(this,'file-boleto')">
+            <input type="file" multiple onchange="setFileName(this,'file-boleto')">
           </label>
         </div>
       </div>
     </div>
- 
+
     <!-- EMPTY STATE -->
     <div class="empty-state" id="emptyState">
       Selecione o tipo de solicitação para ver os campos adicionais
     </div>
- 
+
     <!-- SUBMIT -->
     <div class="submit-row" id="submitRow" style="display:none">
       <div>
@@ -464,9 +464,9 @@
         <div class="submit-hint">Você receberá uma confirmação por e-mail após o envio</div>
       </div>
     </div>
- 
+
   </div>
- 
+
   <!-- SUCCESS -->
   <div id="successArea" style="display:none">
     <div class="success">
@@ -477,20 +477,20 @@
       <button class="new-btn" onclick="newForm()">+ Nova Solicitação</button>
     </div>
   </div>
- 
+
 </div>
- 
+
 <script>
   const POWER_AUTOMATE_URL = 'https://defaultdd5e230fc16549c4957fe203458fff.ab.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/1e5798152c5c4de08f2b307c1eb8bc63/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=G2EOz6Sx9ysygBFONQPMpFfcuWc_QX96AZ4JZ8F-Ups';
- 
+
   const sections = ['cancelamento','substituicao','carta','transferencia','nf_fora','boleto'];
- 
+
   function togglePct(field) {
     const select = document.getElementById(field+'-select');
     const pct = document.getElementById(field+'-pct');
     pct.style.display = select.value === 'custom' ? 'block' : 'none';
   }
- 
+
   function showSection() {
     const tipo = document.getElementById('tipo').value;
     sections.forEach(s => {
@@ -501,14 +501,14 @@
     if(tipo) document.getElementById('sec-'+tipo).classList.remove('hidden');
     updateSteps(tipo);
   }
- 
+
   function updateSteps(tipo) {
     document.getElementById('step1').className = 'step done';
     document.getElementById('step2').className = tipo ? 'step done' : 'step active';
     document.getElementById('step3').className = tipo ? 'step active' : 'step';
     document.getElementById('step4').className = 'step';
   }
- 
+
   function showCodigoNF() {
     const motivo = document.getElementById('motivoNF').value;
     const campo = document.getElementById('campo-codigo-nf');
@@ -519,7 +519,7 @@
     else if(motivo === 'temp') hint.textContent = 'Informe o Engagement ID temporário. Ex: ENG-00000';
     else hint.textContent = 'Informar o número do Engagement ID. Ex: ENG-00000';
   }
- 
+
   function setFileName(input, spanId) {
     const span = document.getElementById(spanId);
     if(input.files.length > 0) {
@@ -528,7 +528,7 @@
       span.style.fontWeight = '500';
     }
   }
- 
+
   function updateProgress() {
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
@@ -540,12 +540,12 @@
     const pct = Math.round((filled/6)*100);
     document.getElementById('progressFill').style.width = pct+'%';
   }
- 
+
   function getVal(id) {
     const el = document.getElementById(id);
     return el ? el.value : '';
   }
- 
+
   function submitForm() {
     const nome = getVal('nome');
     const email = getVal('email');
@@ -554,15 +554,15 @@
       alert('Por favor preencha todos os campos obrigatórios da Seção 1.');
       return;
     }
- 
+
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.textContent = 'Enviando...';
- 
+
     const num = 'AR-' + Date.now().toString().slice(-6);
     const tipo = getVal('tipo');
     const protestaEl = document.querySelector('input[name="protesto"]:checked');
- 
+
     const payload = {
       numeroSolicitacao: num,
       data: new Date().toLocaleDateString('pt-BR'),
@@ -586,7 +586,7 @@
       multa: getVal('multa-select'),
       linkAnexo: ''
     };
- 
+
     fetch(POWER_AUTOMATE_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -600,7 +600,7 @@
       mostrarSucesso(num);
     });
   }
- 
+
   function mostrarSucesso(num) {
     document.getElementById('successNumber').textContent = 'Nº ' + num;
     document.getElementById('step4').className = 'step active';
@@ -609,7 +609,7 @@
     document.getElementById('progressFill').style.width = '100%';
     window.scrollTo({top:0,behavior:'smooth'});
   }
- 
+
   function newForm() {
     document.getElementById('formArea').style.display = 'block';
     document.getElementById('successArea').style.display = 'none';
