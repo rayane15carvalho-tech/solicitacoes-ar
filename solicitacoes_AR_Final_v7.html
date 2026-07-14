@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">7
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,6 +170,8 @@
             <option>Alvarez &amp; Marsal Melhoria de Performance Ltda</option>
             <option>Alvarez &amp; Marsal Assessoria em Transações Ltda</option>
             <option>Alvarez &amp; Marsal Consultoria em Engenharia Ltda</option>
+            <option>Alvarez &amp; Marsal Consultoria em Engenharia Ltda - Filial Nova Lima</option>
+            <option>Alvarez &amp; Marsal Disputas e Investigações Ltda - Filial Nova Lima</option>
             <option>Alvarez &amp; Marsal Consultoria Tributária Ltda</option>
             <option>Alvarez &amp; Marsal Finanças Corporativas Ltda</option>
             <option>Alvarez &amp; Marsal Reestruturação e Assessoria Financeira Ltda</option>
@@ -322,9 +324,9 @@
           <label class="field-label">Motivo da Emissão fora do Sistema<span class="req">*</span></label>
           <select id="motivoNF" onchange="showCodigoNF()">
             <option value="">Selecione o motivo...</option>
-            <option value="and">Criação do código do projeto em andamento</option>
-            <option value="tec">Problemas técnicos com o código do projeto</option>
-            <option value="temp">Código temporário</option>
+            <option value="Criação do código do projeto em andamento">Criação do código do projeto em andamento</option>
+            <option value="Problemas técnicos com o código do projeto">Problemas técnicos com o código do projeto</option>
+            <option value="Código temporário">Código temporário</option>
           </select>
         </div>
         <div class="field" id="campo-codigo-nf">
@@ -359,6 +361,7 @@
         </div>
         <div class="field">
           <label class="field-label">Observações Adicionais</label>
+          <div class="info-box">⚠️ Caso a nota deva ter um valor bruto definido, por favor informe no campo abaixo.</div>
           <input type="text" id="obsNF" placeholder="Opcional">
         </div>
         <div class="field">
@@ -514,9 +517,9 @@
     const campo = document.getElementById('campo-codigo-nf');
     const hint = document.getElementById('hint-codigo-nf');
     campo.style.display = 'block';
-    if(motivo === 'and') hint.textContent = 'Informe o Engagement ID do projeto em andamento. Ex: ENG-00000';
-    else if(motivo === 'tec') hint.textContent = 'Informe o Engagement ID do projeto com problema técnico. Ex: ENG-00000';
-    else if(motivo === 'temp') hint.textContent = 'Informe o Engagement ID temporário. Ex: ENG-00000';
+    if(motivo === 'Criação do código do projeto em andamento') hint.textContent = 'Informe o Engagement ID do projeto em andamento. Ex: ENG-00000';
+    else if(motivo === 'Problemas técnicos com o código do projeto') hint.textContent = 'Informe o Engagement ID do projeto com problema técnico. Ex: ENG-00000';
+    else if(motivo === 'Código temporário') hint.textContent = 'Informe o Engagement ID temporário. Ex: ENG-00000';
     else hint.textContent = 'Informar o número do Engagement ID. Ex: ENG-00000';
   }
 
